@@ -1,5 +1,5 @@
 <h1>Change Recipe</h1>
-<form action="recipe/<%= @recipe.id %>" method="POST">
+<form action="/recipe/<%= @recipe.id %>" method="POST">
   <input id="hidden" type="hidden" name="_method" value="patch"/>
   <textarea name="name"><%= @recipe.name%></textarea>
   <textarea name="ingredients"><%= @recipe.ingredients %></textarea>
