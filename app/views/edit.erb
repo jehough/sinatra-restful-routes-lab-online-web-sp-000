@@ -2,4 +2,5 @@
 <form action="recipe/<%= @recipe.id %>" method="POST">
   <input id="hidden" type="hidden" name="_method" value="patch"/>
   <textarea name="name"><%= @recipe.name%></textarea>
-  <textarea name="ingredients"><%= @recipe.ingredients%></textarea>
+  <textarea name="ingredients"><%= @recipe.ingredients %></textarea>
+  <textarea name="cook_time"><%= @recipe.cook_time %></textarea>
